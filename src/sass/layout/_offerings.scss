@@ -1,0 +1,130 @@
+.offerings {
+    margin: 0 auto;
+    
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+.offerings {
+    background-image: url(../images/offerings/mobile/back-mob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 767px;
+    height: 1050px;
+
+}
+
+.offerings__subject {
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+}
+
+
+.offerings__text {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    padding-right: 28px;
+    margin-bottom: 28px;
+}
+
+.offerings__icon {
+    padding: 11px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.offerings__heading {
+    @include font(700, 18, 21);
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+}
+
+.offerings__desc {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+}
+
+.offerings__btn {
+    @include font(500, 13, 20);
+    color: var(--primary-text-color);
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    padding: 10px 22px;
+    margin-right: 24px;
+}
+
+.offerings__nav {
+    @include font(500, 13, 20);
+    color: var(--primary-text-color);
+
+    &::after {
+        content: ">";
+        transform: rotate(-90deg);
+    }
+}
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .offerings {
+        background-image: url(../images/offerings/tablet/back-tablet.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1279px;
+        height: 1140px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .offerings {
+        background-image: url(../images/offerings/desktop/Apple-desk.webp), url(../images/offerings/desktop/back-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1280px;
+        height: 824px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;
+      width: 704px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container {
+      width: 1248px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
