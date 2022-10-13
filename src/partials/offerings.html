@@ -1,5 +1,5 @@
 <section class="offerings">
-  <div class="container offerings">
+  <div class="container offerings__container">
     <div class="offerings__content">
       <h2 class="offerings__subject">What’s Special About Our Offerings</h2>
       <p class="offerings__text">
@@ -10,8 +10,11 @@
     </div>
     <div class="offerings__features">
       <ul class="offerrings__items list">
-       <li class="offerings__item link">
-        <div class="offirings">
+       <li class="offerings__item">
+        <svg class="offerings__icon" width="48" height="48">
+          <use href="./images/sprite.svg#icon-rocket"></use>
+      </svg>
+        <div class="offirings__block">
             <h3 class="offerings__heading">Fasest Delivery</h3>
             <p class="offerings__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -19,15 +22,18 @@
             </p>
           </div>
         </li>
-        <li class="offerings__item link">
-          <div class="offirings">
-            <h3 class="offerings__heading">Easy to order</h3>
-            <p class="offerings__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.
-            </p>
-            <button type="button" class="offerings__btn">Order Now</button>
-            <a class="offerings__nav" href="#">Read More</a>
+        <li class="offerings__item">
+          <svg class="offerings__icon" width="48" height="48">
+            <use href="./images/sprite.svg#icon-touch"></use>
+        </svg>
+          <div class="offirings__block">
+              <h3 class="offerings__heading">Easy to order</h3>
+              <p class="offerings__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
+            <button type="button" class="offerings__btn btn">Order Now</button>
+            <a class="offerings__nav link" href="#">Read More</a>
           </div>
         </li>
       </ul>
