@@ -12,7 +12,7 @@
   user-select: none;
   &:hover,
   &:hover {
-    fill: #7EB101;
+    fill: #7eb101;
   }
 }
 .fade {
@@ -55,7 +55,7 @@
   transition: backgound-color var(--transition-dur-and-func);
   &:hover,
   &:focus {
-    background-color: #B5FF00;
+    background-color: #b5ff00;
   }
 }
 @media screen and (min-width: 768px) {
@@ -81,7 +81,7 @@
     top: 89px;
     width: 320px;
     height: 320px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 50%;
     border: 14px solid var(--yellow-main);
   }
