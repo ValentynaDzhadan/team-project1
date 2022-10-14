@@ -6,11 +6,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-<<<<<<< HEAD
-    max-width: 320px;
-=======
     width: 480px;
->>>>>>> dev
     margin-left: auto;
     margin-right: auto;
   }
@@ -18,24 +14,12 @@
 
 @media screen and (min-width: 768px) {
   .container {
-<<<<<<< HEAD
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 704px;
-=======
     width: 734px;
->>>>>>> dev
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-<<<<<<< HEAD
-    max-width: 1248px;
-    padding-left: 16px;
-    padding-right: 16px;
-=======
     width: 1278px;
->>>>>>> dev
   }
 }
