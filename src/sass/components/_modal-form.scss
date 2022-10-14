@@ -35,6 +35,10 @@
         outline: none;
         border: 2px solid #7EB101; 
         }
+
+        &:focus:invalid {
+            border: 2px solid #FF705D;
+        }
     }
   
     &::placeholder {
@@ -59,6 +63,8 @@
         &:hover{
             background: #BBF330;
         }
+
+        
     }
 }
 
