@@ -14,13 +14,13 @@
 // ============= MOBILE ===============
 
 @media screen and (max-width: 767px) {
-  .header-navbar,
-  .header__btn {
-    display: none;
-  }
   .header-container {
     max-width: 320px;
     margin: 0 auto;
+  }
+  .header-navbar,
+  .header__btn {
+    display: none;
   }
 
   // =========== MOBILE MENU =============
@@ -40,6 +40,7 @@
       outline: none;
     }
   }
+}
 
 // ============= TABLET ================
 
@@ -94,4 +95,4 @@
     }
   }
 }
-}
+
