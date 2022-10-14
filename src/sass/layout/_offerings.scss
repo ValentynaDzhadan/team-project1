@@ -1,0 +1,139 @@
+.offerings {
+    margin: 0 auto;
+    
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+.offerings__container {
+    background-image: url(../images/offerings/mobile/apple-mob.png), url(../images/offerings/mobile/back-mob.png);
+    background-repeat: no-repeat;
+    background-position: 44% 9%, right top;
+    background-size: auto, cover;
+    max-width: 767px;
+    height: 1050px;
+
+}
+
+.offerings__subject {
+    color: var(--primary-text-color);
+    padding-top: 400px;
+    margin-bottom: 28px;
+}
+
+
+.offerings__text {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    padding-right: 28px;
+    margin-bottom: 28px;
+}
+
+.offerings__icon {
+    padding: 11px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.offerings__heading {
+    @include font(700, 18, 21);
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+}
+
+.offerings__desc {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+}
+
+.offerings__btn {
+    @include font(500, 13, 20);
+    color: var(--primary-text-color);
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    padding: 10px 22px;
+    margin-right: 24px;
+
+    &:hover,
+    &:focus {
+        border: 2px solid #7EB101;
+    }
+}
+
+.offerings__nav {
+    @include font(500, 13, 20);
+    color: var(--primary-text-color);
+    transform: rotate(-90deg); 
+}
+
+.offerings__nav::after {
+    content: "&gt";
+}
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .offerings__container {
+        background-image: url(../images/offerings/tablet/apple-tabl1.png), url(../images/offerings/tablet/apple-tabl2.png), url(../images/offerings/tablet/apple-tabl3.png), url(../images/offerings/tablet/back-tablet.png);
+        background-repeat: no-repeat;
+        background-position: 5% 10%, 65% 17%, 90% 22%, center;
+        background-size: auto, auto, auto, cover;
+        width: 768px;
+        height: 1140px;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .offerings__container {
+        background-image: url(../images/offerings/desktop/apple-desktop.png), url(../images/offerings/desktop/back-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 25% 75%, right top;
+        background-size: 30%, cover;
+        width: 1280px;
+        height: 824px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+//   @media screen and (min-width: 768px) {
+//     .container {
+//       padding-left: 32px;
+//       padding-right: 32px;
+//       width: 704px;
+//     }
+//   }
+  
+//   @media screen and (min-width: 1280px) {
+//     .container {
+//       width: 1248px;
+//       padding-left: 16px;
+//       padding-right: 16px;
+//     }
+//   }
