@@ -18,7 +18,7 @@
       align-items: center;
       height: 260px;
       border: 11px solid #FFE550;
-      border-radius: 139.658px;
+      border-radius: 50%;
       transition: border var(--transition-dur-and-func);
 
       &:hover,
@@ -64,7 +64,6 @@
         &__link {
           height: 310px;
           border: 14px solid #FFE550;
-          border-radius: 167.166px;
           &:hover,
           &:focus {
             border: 14px solid #BBF330;
@@ -85,7 +84,6 @@
         &__link {
           height: 365px;
           border: 16px solid #FFE550;
-          border-radius: 197.5px;
           
           &:hover,
           &:focus {
