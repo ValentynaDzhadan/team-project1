@@ -1,3 +1,4 @@
+
 <section class="hero section">
   <div class="container hero__container">
     <div class="hero__left-part">
@@ -7,33 +8,100 @@
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button data-modal-open type="button" class="open-modal-btn">Order Now</button>
+      <button data-modal-open type="button" class="btn hero__btn">
+        Order Now
+      </button>
     </div>
 
     <div class="hero__right-part">
-      <picture class="hero__photo-food">
-        <source
-          srcset="
-            ./images/hero/hero-webp/desktop/desk-food1.webp    1x,
-            ./images/hero/hero-webp/desktop/desk-food1@2x.webp 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hero/hero-webp/tablet/tabl-food1.webp    1x,
-            ./images/hero/hero-webp/tablet/tabl-food1@2x.webp 2x
-          "
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
+      <div class="hero__slide-container">
+        <div class="mySlides fade">
+          <picture class="hero__photo-food">
+            <source
+              srcset="
+                ./images/hero/hero-webp/desktop/desk-food1.webp    1x,
+                ./images/hero/hero-webp/desktop/desk-food1@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/hero-webp/tablet/tabl-food1.webp    1x,
+                ./images/hero/hero-webp/tablet/tabl-food1@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
 
-        <img
-          src="./images/hero/hero-webp/desktop/desk-food1.png"
-          alt="tasty food"
-        />
-      </picture>
+            <img
+              src="./images/hero/hero-webp/desktop/desk-food1.png"
+              alt="tasty food"
+            />
+          </picture>
+        </div>
+        <div class="mySlides fade">
+          <picture class="hero__photo-food">
+            <source
+              srcset="
+                ./images/hero/hero-webp/desktop/desk-food2.webp    1x,
+                ./images/hero/hero-webp/desktop/desk-food2@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/hero-webp/tablet/tabl-food2.webp    1x,
+                ./images/hero/hero-webp/tablet/tabl-food2@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/hero/hero-webp/desktop/desk-food2.png"
+              alt="tasty food"
+            />
+          </picture>
+        </div>
+        <div class="mySlides fade">
+          <picture class="hero__photo-food">
+            <source
+              srcset="
+                ./images/hero/hero-webp/desktop/desk-food3.webp    1x,
+                ./images/hero/hero-webp/desktop/desk-food3@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hero/hero-webp/tablet/tabl-food3.webp    1x,
+                ./images/hero/hero-webp/tablet/tabl-food3@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/hero/hero-webp/desktop/desk-food3.png"
+              alt="tasty food"
+            />
+          </picture>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+          <svg class="icon-arrow">
+            <use href="./images/sprite.svg#icon-toleft"></use>
+          </svg>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+          <svg class="icon-arrow">
+            <use href="./images/sprite.svg#icon-toright"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
