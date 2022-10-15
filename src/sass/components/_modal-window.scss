@@ -1,14 +1,14 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    height: 449px;
-    background-color: var(--yellow-main);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-radius: 30px;
-    padding: 32px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 449px;
+  background-color: var(--yellow-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 32px 20px;
 
   &__close-btn {
     position: absolute;
@@ -26,6 +26,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    
     &:hover,
     &:focus {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -33,7 +34,7 @@
   }
 
   &__close-btn-icon {
-    fill: #2C2C2C;
+    fill: #2c2c2c;
     transition: fill var(--transition-dur-and-func);
 
     .modal__close-btn:hover &,
@@ -49,39 +50,3 @@
     height: 449px;
   }
 }
-
-
-
-
-
-
-//   &__close-btn {
-//     position: absolute;
-//     top: 16px;
-//     right: 16px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 32px;
-//     height: 32px;
-//     border-radius: 50%;
-//     background: #FFFFFF;
-
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-//     cursor: pointer;
-//     padding: 0;
-//   }
-
-//   &__close-btn-icon {
-//     fill: #303030;
-//     transition: fill var(--transition-dur-and-func);
-
-//     .modal__close-btn:hover &,
-//     .modal__close-btn:focus & {
-//       fill: var(--accent-color);
-//     }
-//   }
-// }
-
-
-
