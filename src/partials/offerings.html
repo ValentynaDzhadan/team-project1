@@ -1,64 +1,98 @@
 <section id=“offerings-scroll” class="offerings section">
   <div class="container offerings__container">
-  <div class="offerings__picture">
-    <picture>
-      <source
-      srcset="./images/offerings/desktop/Apple-desk.webp 1x, ./images/offerings/desktop/Apple-desk@2x.webp 2x"
-      media="(min-width: 1280px)" type="image/webp">
-      <source
-      srcset="./images/offerings/desktop/Apple-desk.jpg 1x, ./images/offerings/desktop/Apple-desk@2x.jpg 2x"
-      media="(min-width: 1280px)">
-      <source
-      srcset="./images/offerings/tablet/Apple1.jpg 1x, ./images/offerings/tablet/Apple1@2x.jpg 2x"
-      media="(min-width: 768px)">
-      <img srcset="./images/offerings/mobile/apple-mob.png" alt="apple">
-    </picture>
-  </div> 
-   <div class="offerings__content">
-    <h2 class="offerings__subject title">What’s Special About Our Offerings</h2>
-      <p class="offerings__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-      </p>
+
+    <div class="offerings__picture">
+      <picture>
+        <source srcset="./images/offerings/apple1.png">
+        <img class="big-apple" srcset="./images/offerings/apple1.png" alt="apple" />
+      </picture>
+
+      <picture>
+        <source srcset="./images/offerings/apple2.png">
+        <img class="middle-apple" srcset="./images/offerings/apple2.png" alt="apple" />
+      </picture>
+
+      <picture>
+        <source srcset="./images/offerings/apple3.png">
+        <img class="small-apple" srcset="./images/offerings/apple3.png" alt="apple" />
+      </picture>
+      <div class="offerings__thumb">
+        <div class="offerings__plate">
+        </div>
+      </div>
+      <div class="offerings__shadow"></div>
     </div>
-    <div class="offerings__features">
-      <ul class="offerrings__items list">
-       <li class="offerings__item">
-        <span class="offerings__image">
-        <svg class="offerings__icon" width="32" height="32">
-          <use href="./images/sprite.svg#icon-rocket"></use></svg>
-        </span>
-        <div class="offirings__block">
-            <h3 class="offerings__heading title">Fasest Delivery</h3>
-            <p class="offerings__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.
-            </p>
-          </div>
-        </li>
-        <li class="offerings__item">
-          <span class="offerings__image">
-          <svg class="offerings__icon" width="32" height="32">
-            <use href="./images/sprite.svg#icon-touch"></use></svg>
-          </span>
-          <div class="offirings__block">
+    <div class="offerings__apple">
+      <picture>
+        <source srcset="
+            ./images/offerings/desktop/apple-desktop.png     1x,
+            ./images/offerings/desktop/apple-desktop@2x.png  2x,
+            ./images/offerings/desktop/apple-desktop.webp    1x,
+            ./images/offerings/desktop/apple-desktop@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+
+        <source srcset="
+            ./images/offerings/mobile/apple280.png     1x,
+            ./images/offerings/mobile/apple280@2x.png  2x,
+            ./images/offerings/mobile/apple280.webp    1x,
+            ./images/offerings/mobile/apple280@2x.webp 2x" media="(min-width: 480px)" type="image/webp" />
+
+        <img srcset="./images/offerings/mobile/apple280.png" class="offerings__apple-pictures" alt="apple" />
+      </picture>
+    </div>
+    <div class="offerings__description">
+      <div class="offerings__content">
+        <h2 class="offerings__subject title">
+          What’s Special About Our Offerings
+        </h2>
+        <p class="offerings__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <div class="offerings__features">
+        <ul class="offerrings__items list">
+          <li class="offerings__item">
+            <span class="offerings__image">
+              <svg class="offerings__icon" width="32" height="32">
+                <use href="./images/sprite.svg#icon-rocket"></use>
+              </svg>
+            </span>
+            <div class="offirings__block">
+              <h3 class="offerings__heading title">Fasest Delivery</h3>
+              <p class="offerings__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
+            </div>
+          </li>
+          <li class="offerings__item">
+            <span class="offerings__image">
+              <svg class="offerings__icon" width="32" height="32">
+                <use href="./images/sprite.svg#icon-touch"></use>
+              </svg>
+            </span>
+            <div class="offirings__block">
               <h3 class="offerings__heading title">Easy to order</h3>
               <p class="offerings__desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros.
               </p>
-              <div class="offerings__button">
-            <button data-modal-open type="button" class="offerings__btn btn">Order Now</button>
-            <a class="offerings__nav link" href="#">Read More
+            </div>
+          </li>
+        </ul>
+        <div class="offerings__button">
+          <button data-modal-open type="button" class="offerings__btn btn">
+            Order Now
+          </button>
+          <a class="offerings__nav link desktop" href="#">Read More
             <svg class="offerings__icon-nav" width="14" height="14">
               <use href="./images/sprite.svg#icon-chevron-down"></use>
             </svg>
           </a>
-          </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
+  </div>
   </div>
 </section>
