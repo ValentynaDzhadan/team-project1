@@ -41,7 +41,6 @@
     }
   }
 }
-
 // ============= TABLET ================
 
 @media screen and (min-width: 768px) {
@@ -51,14 +50,13 @@
   }
 
   .navbar__list {
-    // height: 100%;
     display: flex;
     align-items: center;
+    column-gap: 28px;
 
     .navbar__item {
       line-height: 16px;
       font-size: 14px;
-
       & > a:hover,
       & > a:focus {
         color: var(--btn-green);
@@ -66,14 +64,10 @@
         outline: none;
       }
     }
-
-    .navbar__item:not(:last-child) {
-      margin-right: 28px;
-    }
   }
 
   .header {
-    .navbar__item:last-child {
+    .navbar__list {
       margin-right: 30px;
     }
   }
