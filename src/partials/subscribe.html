@@ -2,45 +2,49 @@
     <div class="subscribe__container container">
         <div class="subscribe__img">
         <picture>
+            <!------- Desktop --------->
             <source srcset="
                     ./images/subscribe/desc.webp   1x,
-                    ./images/subscribe/desc.png   1x,
-                    ./images/subscribe/desc@2x.webp   2x,
-                    ./images/subscribe/desc@2x.png   2x                    
+                    ./images/subscribe/desc@2x.webp   2x                                       
+                    " media="(min-width: 1280px)" type="image/webp" />
+            <source srcset="
+                    ./images/subscribe/desc.png 1x,
+                    ./images/subscribe/desc@2x.png 2x                                       
                     " media="(min-width: 1280px)" />
-        
+            <!---------Tablet -------->
             <source srcset="
                     ./images/subscribe/tabl.webp   1x,
-                    ./images/subscribe/tabl.png   1x,
-                    ./images/subscribe/tabl@2x.webp   2x,
-                    ./images/subscribe/tabl@2x.png   2x                    
+                    ./images/subscribe/tabl@2x.webp   2x                                       
+                    " media="(min-width: 768px)" type="image/webp" />
+            <source srcset="
+                    ./images/subscribe/tabl.png 1x,
+                    ./images/subscribe/tabl@2x.png 2x                                       
                     " media="(min-width: 768px)" />
         
+            <!--------- Mobile ------->
             <source srcset="
-                    ./images/subscribe/mob.webp   1x,
-                    ./images/subscribe/mob.png   1x,
-                    ./images/subscribe/mob@2x.webp   2x,
-                    ./images/subscribe/mob@2x.png   2x                    
+                    ./images/subscribe/mob.webp   1x,                    
+                    ./images/subscribe/mob@2x.webp   2x                                       
+                    " media="(min-width: 480px)" type="image/webp" />
+            <source srcset="
+                    ./images/subscribe/mob.png   1x,                    
+                    ./images/subscribe/mob@2x.png   2x                                       
                     " media="(min-width: 480px)" />
         
-            <img src="./images/subscribe/mob.webp" alt="banan">
+        
+            <img src="./images/subscribe/mob.png" alt="banan">
         </picture>
         </div>
         
         <div class="subscribe__text">
         <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
         <p class="subscribe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-        <form action="" class="sub-form">
-            <label for="">
-                    
-                    <input type="email" class="sub-form__input" name="user_email" placeholder="Enter your email" required>
-                    <!-- <span class="sub-form__field">
-                        <svg>
-                            <use></use>
-                        </svg>Not a valid email address (example@email.com)
-                    </span> -->
-                    <button type="submit" class="sub-form__btn btn">Subscribe</button>
-            </label>
+        <div class="sub-wrap"><form action="" class="sub-form">
+            <label for=""><input type="email" class="sub-form__input" name="user_email" placeholder="Enter your email" required><span class="sub-form__field"><svg width="12" height="12">
+                <use href="./images/sprite.svg#icon-frame"></use>
+            </svg> Not a valid email address (example@email.com)</span>
+            </label><button type="submit" class="sub-form__btn btn">Subscribe</button></div>
+            
         </form>
         
         </div>

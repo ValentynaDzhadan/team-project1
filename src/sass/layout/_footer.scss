@@ -1,0 +1,230 @@
+.footer {
+  background-color: var(--header-footer-background-color);
+  padding: 60px 0;
+}
+
+// @media screen and (max-width: 767px) {
+.footer {
+  background: url(../images/footer/mobile/bg1.png) 0% 25% no-repeat,
+    url(../images/footer/mobile/bg2.png) 100% 0% no-repeat,
+    url(../images/footer/mobile/bg3.png) 50% 100% no-repeat;
+}
+
+.footer__ui {
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+
+  .logo {
+    display: block;
+    height: fit-content;
+
+    .logo__icon {
+      display: block;
+    }
+  }
+
+  .navbar__list {
+    display: flex;
+    row-gap: 20px;
+    margin-right: 81px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .navbar__item {
+      line-height: 16px;
+      font-size: 14px;
+      & > a:hover,
+      & > a:focus {
+        color: var(--btn-green);
+        text-decoration: underline;
+        outline: none;
+      }
+    }
+  }
+
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .footer__label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+
+    .footer__form-field {
+      background: #ffffff;
+      border: 0.85px solid #ffe550;
+      border-radius: 30px;
+      max-width: 100%;
+      padding: 12px;
+      font-size: 12px;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+
+    .footer__form-btn {
+      align-self: flex-end;
+      background: #ffffff;
+      border-radius: 30px;
+      border: 0.85px solid #7eb101;
+      padding: 11px 22px;
+      font-size: 13px;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+
+    .footer-form__text {
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 60px;
+
+      .footer-form__link {
+        color: var(--btn-green);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  font-size: 10px;
+  line-height: 12px;
+
+  .footer-info__list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--btn-green);
+    text-decoration: underline;
+  }
+
+  .footer-info__rights {
+    margin: 0 auto;
+  }
+}
+// }
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+          width: 320px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    // height: 506px;
+    padding: 100px 0;
+    background: url(../images/footer/tablet/bg1.png) 96% 0% no-repeat,
+      url(../images/footer/tablet/bg2.png) 100% 0% no-repeat,
+      url(../images/footer/tablet/bg3.png) 0% 100% no-repeat,
+      url(../images/footer/tablet/bg4.png) 19% 100% no-repeat,
+      url(../images/footer/tablet/bg5.png) 30% 100% no-repeat,
+      url(../images/footer/tablet/bg6.png) 47% 100% no-repeat,
+      url(../images/footer/tablet/bg7.png) 70% 100% no-repeat,
+      url(../images/footer/tablet/bg8.png) 100% 100% no-repeat;
+  }
+
+  .footer__ui {
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 40px;
+
+    .logo {
+      margin-right: 114px;
+    }
+
+    .navbar__list {
+      display: flex;
+      row-gap: 20px;
+      align-items: center;
+      height: 100%;
+
+      .navbar__item {
+        line-height: 16px;
+        font-size: 14px;
+        & > a:hover,
+        & > a:focus {
+          color: var(--btn-green);
+          text-decoration: underline;
+          outline: none;
+        }
+      }
+    }
+
+    .footer__form {
+      flex-direction: row;
+
+      .footer__label {
+        margin-right: 100%;
+      }
+
+      .footer__form-field {
+        width: 279px;
+        margin-right: 13px;
+      }
+
+      .footer-form__text {
+        min-width: 270px;
+        margin-right: 100%;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 14px;
+
+    .footer-info__list {
+      column-gap: 20px;
+    }
+
+    .footer-info__rights {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    background: url(../images/footer/desktop/bg1.png) 50% 100% no-repeat;
+
+    .footer__ui {
+      flex-wrap: nowrap;
+
+      .logo {
+        margin-right: 148px;
+      }
+
+      .footer-navbar {
+        margin-right: 320px;
+      }
+
+      .navbar__list {
+        padding-bottom: 52px;
+        margin: 0;
+      }
+    }
+  }
+}
