@@ -3,9 +3,16 @@
         padding-top: 52px;
         background-color: var(--primary-background-color);
 
+        &__container{
+        position: relative;
+        }
+
         &__img{
-        text-align: center;
-        margin-bottom: 12px;
+        position: absolute;
+        z-index: 999;
+        top: -95px;
+        right: 50%;
+        transform: translateX(50%);
         }
         
         &__title {
@@ -29,11 +36,12 @@
         }
 }
 
-
+.sub-wrap{
+        position: relative;
+}
        
 
 .sub-form__input{
-        position: relative;
         width: 100%;
         height: 42px;
         border: 0.9px solid #FFE550;
@@ -48,11 +56,30 @@
         line-height: 150%;
         }
 
-        // &__field{
-        // position: absolute;
-        // display: inline-block;
-        // width: 100%;
-        // }
+        &:focus:valid{
+        border-color: #7EB101;
+        outline: none;
+        }
+
+        &:focus:invalid {
+        border-color: #FF705D;
+        outline: none;
+        }
+}
+
+.sub-form__field{
+        position: absolute;
+        left: 0;
+        top: 46px;
+        font-size: 10px;
+        line-height: 150%;
+        color: #FF705D;
+        opacity: 0;
+        transition: opacity var(--transition-dur-and-func);
+        
+        .sub-form__input:invalid:focus+& {
+        opacity: 1;
+        }
 }
 
 .sub-form__btn{
@@ -98,8 +125,10 @@
                 line-height: 150%;
         }
 
-        &__img{
-                text-align: end;
+        &__img{                                
+         top: -156px;
+         right: 0%;
+         transform: none;                        
         }
         }
         
@@ -112,24 +141,30 @@
                 display: inline;
                 margin-left: 22px;
         }
+
+        .sub-wrap {
+                position: relative;
+                display: inline-block;
+        }
 }
 
 @media screen and (min-width: 1280px){
-        .subscribe__container{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+        .subscribe{
+                padding-top: 0;
+        
+        &__container {
+                display: flex;
+        
+                }
+        &__img {
+                top: -25%;
+                }
+        &__text {
+        width: 656px;
         }
-
-        .subscribe__text{
-                width: 656px;
         }
         
-        // .subscribe__description{
-        //         font-size: 16px;
-        //         line-height: 150%;
-        // }
-
+        
 
         .sub-form__btn {
                 margin-left: 32px;
