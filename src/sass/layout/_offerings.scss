@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-.offerings__picture {
+.offerings__apple {
   margin-bottom: 60px;
 }
 
@@ -61,14 +61,21 @@
 }
 
 
+
+  
 @media screen and (max-width: 767px) {
   .offerings {
     margin: 0 auto;
     background-image: url(../images/offerings/mobile/back-mob480.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
   }
+
+  .offerings__picture {
+    display: none;
+  }
+
 
   .offerings__container {
     padding-left: auto;
@@ -88,15 +95,26 @@
     @include font(500, 13, 20);
     color: var(--primary-text-color);
   }
+
+
+  .la {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
   .offerings {
     background-image: url(../images/offerings/tablet/back-tablet.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
+    z-index: -1000;
   }
+
+.offerings__apple {
+  display: none;
+}
 
   .offerings__content {
     width: 520px;
@@ -105,6 +123,8 @@
   .offerings__subject {
     @include font(700, 42, 50);
     margin-bottom: 20px;
+    margin-top: 128px;
+    
 }
 
   .offerings__text {
@@ -133,18 +153,99 @@
     @include font(500, 13, 20);
     color: var(--primary-text-color);
   }
+
+
+  .offerings__picture {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+
+.big-apple {
+width: 257px;
+height: 325px;
+position: relative;
+z-index: 30;
+
 }
+
+.middle-apple {
+  width: 166px;
+  height: 211px;
+  margin-right: 44px;
+margin-left: 75px;
+
+}
+.small-apple {
+  width: 108px;
+  height: 136px;
+
+}
+
+.offerings__thumb {
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  z-index: 10;
+
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 357px;
+  height: 357px;
+
+}
+
+.offerings__plate {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 326px;
+  height: 326px;
+  margin: 15px;
+   
+}
+
+.offerings__shadow {
+  position: absolute;
+width: 163.57px;
+height: 56.47px;
+left: 43px;
+top: 290px;
+background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+filter: blur(8.43818px);
+z-index: 20;
+}
+}
+
+
+
+
 
 @media screen and (min-width: 1280px) {
   .offerings {
     margin: 0 auto;
     background-image: url(../images/offerings/desktop/back-desktop.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
+    padding-bottom: 0;
   }
 
-    .offerings__picture {
+  .offerings__picture {
+    display: none;
+  }
+
+  .offerings__subject {
+    margin-top: 160px;
+  }
+
+  .offerings__apple-pictures {
+    width: 550px;
+    height: 604px;
+  }
+
+
+  .offerings__apple {
+  display: flex;
    margin-top: 231px;
    margin-right: 90px;
   }
@@ -154,7 +255,7 @@
   }
 
   .offerings__description {
-    margin-top: 260px;
+    margin-top: 100px;
     
   }
 
@@ -167,6 +268,7 @@
     @include font(400, 14, 21);
     color: var(--primary-text-color);
     margin-bottom: 32px;
+    margin-right: 67px;
   }
 
   .desktop {
