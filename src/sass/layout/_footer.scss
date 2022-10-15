@@ -5,7 +5,7 @@
 
 // @media screen and (max-width: 767px) {
 .footer {
-  background: url(../images/footer/mobile/bg1.png) 0% 28% no-repeat,
+  background: url(../images/footer/mobile/bg1.png) 0% 25% no-repeat,
     url(../images/footer/mobile/bg2.png) 100% 0% no-repeat,
     url(../images/footer/mobile/bg3.png) 50% 100% no-repeat;
 }
@@ -87,6 +87,7 @@
     .footer-form__text {
       font-size: 10px;
       line-height: 12px;
+      margin-bottom: 60px;
 
       .footer-form__link {
         color: var(--btn-green);
@@ -115,6 +116,14 @@
   }
 }
 // }
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+          width: 320px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+}
 
 @media screen and (min-width: 768px) {
   .footer {
