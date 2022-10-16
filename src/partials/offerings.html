@@ -3,19 +3,32 @@
 
     <div class="offerings__picture">
       <picture>
-        <source srcset="./images/offerings/apple1.png">
-        <img class="big-apple" srcset="./images/offerings/apple1.png" alt="apple" />
+        <!-- TABLET -->
+        <source srcset="./images/offerings/tablet/apple-big.webp 1x, ./images/offerings/tablet/apple-big@2x.webp 2x"
+          media="(min-width: 768px)" type="image/webp" />
+        <source srcset="./images/offerings/tablet/apple-big.png 1x, ./images/offerings/tablet/apple-big@2x.png 2x"
+          media="(min-width: 768px)" />
+        <img src="./images/offerings/tablet/apple-big.png" alt="big apple" class="big-apple" />
       </picture>
 
       <picture>
-        <source srcset="./images/offerings/apple2.png">
-        <img class="middle-apple" srcset="./images/offerings/apple2.png" alt="apple" />
+        <!-- TABLET -->
+        <source srcset="./images/offerings/tablet/apple-mid.webp 1x, ./images/offerings/tablet/apple-mid@2x.webp 2x"
+          media="(min-width: 768px)" type="image/webp" />
+        <source srcset="./images/offerings/tablet/apple-mid.png 1x, ./images/offerings/tablet/apple-mid@2x.png 2x"
+          media="(min-width: 768px)" />
+        <img src="./images/offerings/tablet/apple-mid.png" alt="middle apple" class="middle-apple" />
       </picture>
 
       <picture>
-        <source srcset="./images/offerings/apple3.png">
-        <img class="small-apple" srcset="./images/offerings/apple3.png" alt="apple" />
+        <!-- TABLET -->
+        <source srcset="./images/offerings/tablet/apple-small.webp 1x, ./images/offerings/tablet/apple-small@2x.webp 2x"
+          media="(min-width: 768px)" type="image/webp" />
+        <source srcset="./images/offerings/tablet/apple-small.png 1x, ./images/offerings/tablet/apple-small@2x.png 2x"
+          media="(min-width: 768px)" />
+        <img src="./images/offerings/tablet/apple-small.png" alt="small apple" class="small-apple" />
       </picture>
+
       <div class="offerings__thumb">
         <div class="offerings__plate">
         </div>
@@ -23,20 +36,23 @@
       <div class="offerings__shadow"></div>
     </div>
     <div class="offerings__apple">
+
       <picture>
-        <source srcset="
-            ./images/offerings/desktop/apple-desktop.png     1x,
-            ./images/offerings/desktop/apple-desktop@2x.png  2x,
-            ./images/offerings/desktop/apple-desktop.webp    1x,
-            ./images/offerings/desktop/apple-desktop@2x.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+        <!-- DESKTOP -->
+        <source
+          srcset="./images/offerings/desktop/apple-desktop.webp 1x, ./images/offerings/desktop/apple-desktop@2x.webp 2x"
+          media="(min-width: 1280px)" type="image/webp" />
+        <source
+          srcset="./images/offerings/desktop/apple-desktop.png 1x, ./images/offerings/desktop/apple-desktop@2x.png 2x"
+          media="(min-width: 1280px)" />
 
-        <source srcset="
-            ./images/offerings/mobile/apple280.png     1x,
-            ./images/offerings/mobile/apple280@2x.png  2x,
-            ./images/offerings/mobile/apple280.webp    1x,
-            ./images/offerings/mobile/apple280@2x.webp 2x" media="(min-width: 480px)" type="image/webp" />
+        <!-- MOBILE -->
+        <source srcset="./images/offerings/mobile/apple280.webp 1x, ./images/offerings/mobile/apple280@2x.webp 2x"
+          media="(max-width: 767px)" type="image/webp" />
+        <source srcset="./images/offerings/mobile/apple280.png 1x, ./images/offerings/desktop/apple-desktop@2x.png 2x"
+          media="(max-width: 767px)" />
 
-        <img srcset="./images/offerings/mobile/apple280.png" class="offerings__apple-pictures" alt="apple" />
+        <img src="./images/offerings/desktop/apple-desktop.png" class="offerings__apple-pictures" alt="apple" />
       </picture>
     </div>
     <div class="offerings__description">
@@ -91,6 +107,5 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
 </section>
