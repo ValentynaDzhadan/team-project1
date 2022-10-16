@@ -43,6 +43,12 @@
   }
 }
 
+.icon-arrow{
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 16%);
+  border-radius: 8px;
+    background-color: #fff;
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 250ms;
