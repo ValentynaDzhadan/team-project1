@@ -11,6 +11,10 @@
   flex-direction: column;
   row-gap: 24px;
 
+  &__field{
+    position: relative;
+  }
+
   &__field-desc {
     display: block;
     text-align: start;
@@ -63,5 +67,20 @@
     &:hover {
       background: #bbf330;
     }
+  }
+}
+
+.modal-form__mistake {
+  position: absolute;
+  left: 12px;
+  top: 75px;
+  font-size: 10px;
+  line-height: 150%;
+  color: #ff705d;
+  opacity: 0;
+  transition: opacity var(--transition-dur-and-func);
+
+  .modal-form__input:invalid:focus + & {
+    opacity: 1;
   }
 }

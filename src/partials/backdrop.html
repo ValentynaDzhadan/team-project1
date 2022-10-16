@@ -17,7 +17,14 @@
           pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
           required
         />
+        <span class="modal-form__mistake">
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#icon-frame"></use>
+          </svg>
+          The name must be between 3 and 25 characters
+        </span>
       </label>
+      
       <label class="modal-form__field">
         <span class="modal-form__field-desc">Phone number</span>
         <input
@@ -28,6 +35,12 @@
           placeholder="+38(0_ _) _ _ _   _ _   _ _"
           required
         />
+        <span class="modal-form__mistake">
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#icon-frame"></use>
+          </svg>
+          This phone must be in the format  099 000 00 00
+        </span>
       </label>
       <label class="modal-form__field">
         <span class="modal-form__field-desc">E-mail</span>
@@ -38,6 +51,12 @@
           placeholder="example@gmail.com"
           required
         />
+        <span class="modal-form__mistake">
+          <svg width="12" height="12">
+            <use href="./images/sprite.svg#icon-frame"></use>
+          </svg>
+          Please enter a valid email address
+        </span>
       </label>
       <button type="submit" class="modal-form__btn main-btn btn">Send</button>
     </form>
