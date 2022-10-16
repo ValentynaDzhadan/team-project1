@@ -11,7 +11,7 @@
 }
 
 .footer__ui {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +71,15 @@
       font-size: 12px;
       line-height: 150%;
       margin-bottom: 20px;
+      &:focus:valid {
+        border-color: #7eb101;
+        outline: none;
+      }
+    
+      &:focus:invalid {
+        border-color: #ff705d;
+        outline: none;
+      }
     }
 
     .footer__form-btn {
@@ -82,6 +91,10 @@
       font-size: 13px;
       line-height: 150%;
       margin-bottom: 20px;
+      &:hover,
+      &:focus{
+        background: #FFE550;
+      }
     }
 
     .footer-form__text {
