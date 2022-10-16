@@ -4,69 +4,65 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+  &__apple {
+    margin-bottom: 60px;
+  }
 
-.offerings__apple {
-  margin-bottom: 60px;
-}
+  &__subject {
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+  }
 
-.offerings__subject {
-  color: var(--primary-text-color);
-  margin-bottom: 28px;
-}
+  &__text {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    padding-right: 28px;
+    margin-bottom: 28px;
+  }
 
-.offerings__text {
-  @include font(400, 14, 16);
-  color: var(--primary-text-color);
-  padding-right: 28px;
-  margin-bottom: 28px;
-}
+  &__heading {
+    @include font(700, 18, 21);
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
 
-.offerings__heading {
-  @include font(700, 18, 21);
-  color: var(--primary-text-color);
-  margin-bottom: 16px;
-}
+  &__desc {
+    @include font(400, 14, 16);
+    color: var(--primary-text-color);
+    margin-bottom: 28px;
+  }
 
-.offerings__desc {
-  @include font(400, 14, 16);
-  color: var(--primary-text-color);
-  margin-bottom: 28px;
-}
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
 
-.offerings__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin-bottom: 8px;
-}
+  &__btn {
+    @include font(500, 13, 20);
+    color: var(--primary-text-color);
+    background: #ffffff;
+    border: 2px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 22px;
+    margin-right: 24px;
+  
+    &:hover,
+    &:focus {
+      border: 2px solid #597D00;
+    }
+  }
 
-.offerings__btn {
-  @include font(500, 13, 20);
-  color: var(--primary-text-color);
-  background: #ffffff;
-  border: 2px solid #7eb101;
-  border-radius: 30px;
-  padding: 10px 22px;
-  margin-right: 24px;
-
-  &:hover,
-  &:focus {
-    border: 2px solid #597D00;
+  &__icon-nav {
+    width: 14px;
+    height: 14px;
   }
 }
-
-.offerings__icon-nav {
-  width: 14px;
-  height: 14px;
-}
-
-
-
   
 @media screen and (max-width: 767px) {
   .offerings {
@@ -75,37 +71,29 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    &__picture {
+      display: none;
+    }
+
+    &__container {
+      padding-left: auto;
+      padding-right: auto;
+      width: 320px;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font(500, 13, 20);
+      color: var(--primary-text-color);
+    }
   }
-
-  .offerings__picture {
-    display: none;
-  }
-
-
-  .offerings__container {
-    padding-left: auto;
-    padding-right: auto;
-    width: 320px;
-  }
-
-  .offerings__button {
-    display: flex;
-    align-items: center;
-  }
-
-  .offerings__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include font(500, 13, 20);
-    color: var(--primary-text-color);
-  }
-
-
-  .la {
-    display: none;
-  }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -116,115 +104,103 @@
     background-size: cover;
     z-index: -1000;
     padding-top: 140px;
-  }
+    &__apple {
+      display: none;
+    }
 
-.offerings__apple {
-  display: none;
-}
+    &__content {
+      width: 520px;
+    }
 
-  .offerings__content {
-    width: 520px;
-}
+    &__subject {
+      @include font(700, 42, 50);
+      margin-bottom: 20px;
+      margin-top: 128px;
+    }
 
-  .offerings__subject {
-    @include font(700, 42, 50);
-    margin-bottom: 20px;
-    margin-top: 128px;
+    &__text {
+      margin-bottom: 40px;
+    }
     
-}
+    &__items{
+      display: flex;
+    }
 
-  .offerings__text {
-    margin-bottom: 40px;
+    &__desc {
+      width: 252px;
+      margin-right: 116px;
+      margin-bottom: 40px;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font(500, 13, 20);
+      color: var(--primary-text-color);
+    }
+
+    &__picture {
+      display: flex;
+      align-items: baseline;
+      position: relative;
+    }
+
+    &__thumb {
+      position: absolute;
+      top: 30px;
+      left: -50px;
+      z-index: 10;
+      border: 3px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      width: 357px;
+      height: 357px;
+    }
+
+    &__plate {
+      background: #ffffff;
+      border-radius: 50%;
+      width: 326px;
+      height: 326px;
+      margin: 15px; 
+    }
+
+    &__shadow {
+      position: absolute;
+      width: 163.57px;
+      height: 56.47px;
+      left: 43px;
+      top: 290px;
+      background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+      filter: blur(8.43818px);
+      z-index: 20;
+    }
   }
 
-  .offerrings__items {
-    display: flex;
+  .big-apple {
+  width: 257px;
+  height: 325px;
+  position: relative;
+  z-index: 30;
+  }
+  
+  .middle-apple {
+    width: 166px;
+    height: 211px;
+    margin-right: 44px;
+    margin-left: 75px;
   }
 
-  .offerings__desc {
-    width: 252px;
-    margin-right: 116px;
-    margin-bottom: 40px;
+  .small-apple {
+    width: 108px;
+    height: 136px;
   }
-
-  .offerings__button {
-    display: flex;
-    align-items: center;
-  }
-
-  .offerings__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include font(500, 13, 20);
-    color: var(--primary-text-color);
-  }
-
-
-  .offerings__picture {
-    display: flex;
-    align-items: baseline;
-    position: relative;
-  }
-
-.big-apple {
-width: 257px;
-height: 325px;
-position: relative;
-z-index: 30;
-
 }
-
-.middle-apple {
-  width: 166px;
-  height: 211px;
-  margin-right: 44px;
-margin-left: 75px;
-
-}
-.small-apple {
-  width: 108px;
-  height: 136px;
-
-}
-
-.offerings__thumb {
-  position: absolute;
-  top: 30px;
-  left: -50px;
-  z-index: 10;
-
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  width: 357px;
-  height: 357px;
-
-}
-
-.offerings__plate {
-  background: #ffffff;
-  border-radius: 50%;
-  width: 326px;
-  height: 326px;
-  margin: 15px;
-   
-}
-
-.offerings__shadow {
-  position: absolute;
-width: 163.57px;
-height: 56.47px;
-left: 43px;
-top: 290px;
-background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-filter: blur(8.43818px);
-z-index: 20;
-}
-}
-
-
-
-
 
 @media screen and (min-width: 1280px) {
   .offerings {
@@ -234,47 +210,44 @@ z-index: 20;
     background-position: top;
     background-size: cover;
     // padding-bottom: 0;
-  }
+    &__picture {
+      display: none;
+    }
 
-  .offerings__picture {
-    display: none;
-  }
+    &__subject {
+      margin-top: 160px;
+    }
 
-  .offerings__subject {
-    margin-top: 160px;
-  }
+    &__apple-pictures {
+      width: 550px;
+      height: 604px;
+    }
 
-  .offerings__apple-pictures {
-    width: 550px;
-    height: 604px;
-  }
+    &__apple {
+      display: flex;
+       margin-top: 231px;
+       margin-right: 90px;
+    }
 
+    &__container {
+      display: flex;
+    }
 
-  .offerings__apple {
-  display: flex;
-   margin-top: 231px;
-   margin-right: 90px;
-  }
-  
-  .offerings__container {
-    display: flex;
-  }
+    &__description {
+      margin-top: 100px;
+    }
 
-  .offerings__description {
-    margin-top: 100px;
-    
-  }
+    &__text {
+      @include font(400, 16, 24);
+      margin-bottom: 40px;
+    }
 
-  .offerings__text {
-    @include font(400, 16, 24);
-    margin-bottom: 40px;
-  }
-
-  .offerings__desc {
-    @include font(400, 14, 21);
-    color: var(--primary-text-color);
-    margin-bottom: 32px;
-    margin-right: 67px;
+    &__desc {
+      @include font(400, 14, 21);
+      color: var(--primary-text-color);
+      margin-bottom: 32px;
+      margin-right: 67px;
+    }
   }
 
   .desktop {
