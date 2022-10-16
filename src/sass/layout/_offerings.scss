@@ -115,6 +115,7 @@
     background-position: top;
     background-size: cover;
     z-index: -1000;
+    padding-top: 140px;
   }
 
 .offerings__apple {
@@ -227,12 +228,12 @@ z-index: 20;
 
 @media screen and (min-width: 1280px) {
   .offerings {
-    margin: 0 auto;
+    // margin: 0 auto;
     background-image: url(../images/offerings/desktop/back-desktop.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding-bottom: 0;
+    // padding-bottom: 0;
   }
 
   .offerings__picture {
