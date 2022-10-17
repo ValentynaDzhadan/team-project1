@@ -44,6 +44,11 @@
     &__link_no-mobile {
       display: none;
     }
+    &__title{
+      margin: 0 auto;
+      margin-bottom: 20px;
+      max-width: 260px;
+    }
   }
 }
 

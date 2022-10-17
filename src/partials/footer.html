@@ -9,23 +9,40 @@
     </div>
     <nav class="navbar footer-navbar">
       <ul class="list navbar__list">
-        <li class="navbar__item"><a href="#hero-scroll" class="link">Home</a></li>
-        <li class="navbar__item"><a href="#offerings-scroll" class="link">About</a></li>
-        <li class="navbar__item"><a href="#customers-say-scroll" class="link">Service</a></li>
-        <li class="navbar__item"><a href="#favorites-scroll" class="link">Menu</a></li>
-        <li class="navbar__item"><a href="#subscribe-scroll" class="link">Contact</a></li>
+        <li class="navbar__item">
+          <a href="#hero-scroll" class="link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#offerings-scroll" class="link">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#customers-say-scroll" class="link">Service</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#favorites-scroll" class="link">Menu</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#subscribe-scroll" class="link">Contact</a>
+        </li>
       </ul>
     </nav>
     <form class="footer__form">
       <label for="footer-email" class="footer__label"> Subscribe</label>
       <input
         type="email"
-        name="email-for-newsletter"
+        name="user_email"
         class="footer__form-field"
         required
         placeholder="Enter your email"
         id="footer-email"
       />
+      <span class="footer__mistake">
+        <svg width="12" height="12">
+          <use href="./images/sprite.svg#icon-frame"></use>
+        </svg>
+        Not a valid email address (example@email.com)</span
+      >
+
       <button type="submit" class="footer__form-btn btn">Subscribe</button>
 
       <p class="footer-form__text">
